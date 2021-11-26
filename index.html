@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Password Generator</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Password Generator</h1>
+			<h3 id='passwordDisplay'>password</h3>
+
+			<form id='formPassGen'>
+				<label for="charAmNumber">Number of charAt</label>
+				<div class="wrap">
+					<input
+						value="10"
+						min="1"
+						max="50"
+						type="range"
+						name=""
+						id="charAmRange"
+					/>
+					<input
+                    class='number-input'
+						value="10"
+						min="1"
+						max="50"
+						type="number"
+						name=""
+						id="charAmNumber"
+					/>
+				</div>
+
+				<label for="incUpper">Include Uppercase</label>
+				<input type="checkbox" id="incUpper" />
+
+				<label for="incNumber">Include Numbers</label>
+				<input type="checkbox" id="incNumber" />
+
+				<label for="incSymbols">Include Symbols</label>
+				<input type="checkbox" id="incSymbols" />
+
+				<button class='btn' type="submit">Generate Ramdom Password</button>
+			</form>
+		</div>
+
+		<script src="./app.js"></script>
+	</body>
+</html>
